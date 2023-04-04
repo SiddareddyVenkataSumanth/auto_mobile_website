@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+</head>
+<body>
+    <header>
+        <a href="AutoMob-Mechanic.html">AutoMob-Mechanic</a>
+    <br>
+    <br>
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="Services.html">Services</a> |
+        <a href="Booking.html">Booking</a> |
+        <a href="mailto:contact@automob.co.in">contact@automob.co.in</a> |
+        <a href="tel:9999999999">call us</a>
+    </nav>
+    <hr>
+    <br>
+    </header>
+    <h3>Schedule Your Appointment</h3>
+    <form action="booking-success.html" autocomplete="on">
+        <label for="adate">Appointment Date:</label>&nbsp;
+        <input type="date" id="adate" required/>
+        <br><br>
+        <label for="addres">Address:</label>&nbsp;
+        <textarea cols="30" rows="3" id="addres" required></textarea>
+        <br><br>
+        <label for="city">City:</label>&nbsp;
+        <input type="text" id="city" required/>
+        <br><br>
+        <label for="State">State:</label>&nbsp;
+        <input list="states" id="State" name="State" required/>
+        <datalist id="States">
+            <option value="Andhra pradesh">Andhra pradesh</option>
+            <option value="Goa">Goa</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Maharashtra">Maharashtra</option>
+        </datalist>
+        <br><br>
+        <label for="notifi">Send Notification:</label>&nbsp;
+        <input id="notifi" type="checkbox">&nbsp;Email &nbsp;&nbsp;<input type="checkbox" id="notifi">&nbsp;SMS
+        <br><br><br>
+        <input type="submit" formtarget="booking-success.html" value="Book">
+    </form>
+    <br><br><br><br><hr>
+    <footer>
+        <p>Copyrights &copy; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
